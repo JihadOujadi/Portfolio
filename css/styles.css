@@ -6,6 +6,10 @@
   font-family: "Poppins";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   font-size: 16px;
 }
@@ -65,9 +69,9 @@ header {
 
 .presentation {
   display: flex;
-  flex-direction: column;
-  margin: 150px;
   flex-wrap: wrap;
+  padding: 50px 30px;
+  margin-top: 80px;
 }
 
 .presentation--title {
@@ -83,26 +87,35 @@ header {
   margin-bottom: 30px;
 }
 
-.presentation--content {
+.presentation--competences {
   display: flex;
+  width: 100%;
+  gap: 20px;
 }
-.presentation--content figure {
+.presentation--competences figure {
   display: flex;
-  align-items: center;
-  margin-left: 30px;
-  max-width: 400px;
-  padding: 20px 40px 20px 30px;
+  max-width: 500px;
+  gap: 20px;
+  background-color: #faf2ea;
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px 30px;
 }
-.presentation--content figure img {
-  width: 45px;
-  padding: 20px 0;
+.presentation--competences figure img {
+  width: 50px;
+  height: 50px;
 }
-.presentation--content h3 {
+.presentation--competences .image-competences {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.presentation--competences h3 {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 23px;
+  font-size: 20px;
 }
-.presentation--content p {
+.presentation--competences p {
   text-align: center;
 }
 
