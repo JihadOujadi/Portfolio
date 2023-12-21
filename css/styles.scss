@@ -6,7 +6,7 @@
   padding: 0;
   font-family: $font;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 p {
@@ -86,7 +86,7 @@ header {
     display: flex;
     max-width: 500px;
     gap: 20px;
-    background-color: #faf2ea;
+    background-color: #f2f8ff;
     border-radius: 20px;
     width: 100%;
     padding: 20px 30px;
@@ -95,7 +95,7 @@ header {
       height: 50px;
     }
   }
-  .image-competences{
+  .image-competences {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -130,17 +130,61 @@ header {
 }
 
 .projet {
-  margin: 100px;
+  width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  padding: 60px 0 60px 20px;
+  background-color: #d1edff;
 
   article {
     display: flex;
+    width: 350px;
+  }
+  .projet-title{
+    width: 20%;
+  }
+  .projet-container{
+    width: 80%;
+    .fa-solid{
+      color: #01336f
+    }
+  }
+}
+.projet-title{
+  h2{
+    color: #01336f;
   }
 }
 .projet--element {
+  gap: 10px;
+  overflow: hidden;
   display: flex;
-  align-items: center;
+  article{
+    display: flex;
+    flex-direction: column;
+    border: 10px solid #f2f8ff;
+    background-color: #f2f8ff;
+    border-radius: 23px;
+  }
+  figure{
+    img{
+      height: 300px;
+      object-fit: cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  }
+}
+.slider-arrow{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 15px 10px;
+}
+.projet--content{
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 .contact {
   margin: 50px;

@@ -96,7 +96,7 @@ header {
   display: flex;
   max-width: 500px;
   gap: 20px;
-  background-color: #faf2ea;
+  background-color: #f2f8ff;
   border-radius: 20px;
   width: 100%;
   padding: 20px 30px;
@@ -139,17 +139,61 @@ header {
 }
 
 .projet {
-  margin: 100px;
+  width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  padding: 60px 0 60px 20px;
+  background-color: #d1edff;
 }
 .projet article {
   display: flex;
+  width: 350px;
+}
+.projet .projet-title {
+  width: 20%;
+}
+.projet .projet-container {
+  width: 80%;
+}
+.projet .projet-container .fa-solid {
+  color: #01336f;
+}
+
+.projet-title h2 {
+  color: #01336f;
 }
 
 .projet--element {
+  gap: 10px;
+  overflow: hidden;
   display: flex;
-  align-items: center;
+}
+.projet--element article {
+  display: flex;
+  flex-direction: column;
+  border: 10px solid #f2f8ff;
+  background-color: #f2f8ff;
+  border-radius: 23px;
+}
+.projet--element figure img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.slider-arrow {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 15px 10px;
+}
+
+.projet--content {
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 .contact {
