@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,12 +22,11 @@
     <title>Jihad Oujadi - Développeur Front-end</title>
   </head>
   <body>
-    <main class="main-content">
+    <main>
       <!-- Début header -->
-
       <header>
-        <nav class="nav-menu">
-          <ul class="nav-menu--element">
+        <nav>
+          <ul class="menu">
             <li>
               <a href="">Home</a>
             </li>
@@ -40,12 +43,12 @@
             Jihad OUJADI <br />
             Développeur Front-End
           </h1>
-          <a
+          <button
             href="#"
             role="button"
             aria-label="Cliquez pour en savoir plus"
             class="CTA"
-            >Me découvrir</a
+            >Me découvrir</button
           >
         </section>
       </header>
@@ -97,87 +100,26 @@
 
         <!-- Début section portfolio -->
 
-        <section class="projet" id="projets">
-          <div class="projet-title">
-            <h2>Mes projets</h2>
-          </div>
-          <div class="projet-container">
-            <div class="slider-arrow">
-              <i class="fa-solid fa-arrow-right"></i>
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="projet--element">
-              <article>
-                <figure>
-                  <img src="/assets/image-test.png" alt="" />
-                  <h3 id="title" class="projet--content">
-                    Solidarité Renov'action
-                  </h3>
-                </figure>
-              </article>
-              <article>
-                <figure>
-                  <img src="/assets/image-test.png" alt="" />
-                  <h3 id="title" class="projet--content">Abice</h3>
-                </figure>
-              </article>
-              <article>
-                <figure>
-                  <img src="/assets/image-test.png" alt="" />
-                  <h3 id="title" class="projet--content">B Protection</h3>
-                </figure>
-              </article>
-              <article>
-                <figure>
-                  <img src="/assets/image-test.png" alt="" />
-                  <h3 id="title" class="projet--content">Hélène Vasquez</h3>
-                </figure>
-              </article>
-              <article>
-                <figure>
-                  <img src="/assets/image-test.png" alt="" />
-                  <h3 id="title" class="projet--content">Chiba Bordeaux</h3>
-                </figure>
-              </article>
-              <article>
-                <figure>
-                  <img src="/assets/image-test.png" alt="" />
-                  <h3 id="title" class="projet--content">Booki</h3>
-                </figure>
-              </article>
-              <article>
-                <figure>
-                  <img src="/assets/image-test.png" alt="" />
-                  <h3 id="title" class="projet--content">Oh My Food</h3>
-                </figure>
-              </article>
-              <article>
-                <figure>
-                  <img src="/assets/image-test.png" alt="" />
-                  <h3 id="title" class="projet--content">Kanap</h3>
-                </figure>
-              </article>
-              <article>
-                <figure>
-                  <img src="/assets/image-test.png" alt="" />
-                  <h3 id="title" class="projet--content">Hot Sauce</h3>
-                </figure>
-              </article>
-              <article>
-                <figure>
-                  <img src="/assets/image-test.png" alt="" />
-                  <h3 id="title" class="projet--content">Groupomania</h3>
-                </figure>
-              </article>
-            </div>
-          </div>
+        <section class="projets" id="projets">
+          <div class="container"></div>
         </section>
 
         <!-- Fin section Portfolio -->
       </main>
-      <footer></footer>
+      <footer>
+        © Copyright -
+        <div id="annee">
+          <script>
+            var date = new Date();
+            var year = date.getFullYear();
+            document.write(year);
+          </script>
+        </div>
+
+      </footer>
     </main>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="/script.js"></script>
   <script
     src="https://kit.fontawesome.com/5321ed25d5.js"
