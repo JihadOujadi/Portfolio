@@ -24,7 +24,6 @@ html {
 
 body {
   background: $bleu_sombre;
-  display: flex;
 }
 
 .jo_portfolio__main-navbar {
@@ -34,10 +33,11 @@ body {
 
 .jo_portfolio__navbar-container {
   position: absolute;
-  width: 100%;
+  width: 800px;
   height: 60px;
   border: red 1px solid;
   left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
 }
@@ -62,4 +62,33 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.jo_portfolio__banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.jo_portfolio__banner-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  row-gap: 20px;
+  padding: 20px 30px;
+}
+
+.jo_portfolio__title,
+.jo_portfolio__subtitle,
+.jo_portfolio__banner-text {
+  color: $blanc;
+}
+
+.jo_portfolio__title {
+  font-size: 30px;
+}
+.jo_portfolio__subtitle {
+  font-size: 50px;
+}
+.jo_portfolio__banner-text {
+  font-size: 20px;
+  line-height: 1.4;
 }
