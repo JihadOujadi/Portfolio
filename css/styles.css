@@ -1,8 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+p {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+h1,
+h2,
+h3,
+a,
+li {
+  font-family: "Gabarito", sans-serif;
 }
 
 html {
@@ -10,45 +21,43 @@ html {
 }
 
 body {
+  background: #0a0f27;
   display: flex;
-  min-height: 100vh;
-  font-family: "Poppins";
 }
 
-p {
-  font-size: 16px;
+.jo_portfolio__main-navbar {
+  position: relative;
+  width: 100%;
 }
 
-h1, h2, h3, h4 {
-  color: #01336f;
-}
-
-header {
+.jo_portfolio__navbar-container {
   position: absolute;
   width: 100%;
-  height: 10vh;
-  top: 0;
-  left: 0;
+  height: 60px;
+  border: red 1px solid;
+  left: 50%;
+  display: flex;
+  align-items: center;
 }
 
-nav {
-  border: 2px solid red;
+.jo_portfolio__navbar-list {
   display: flex;
   width: 100%;
-  height: 100%;
   justify-content: space-around;
   align-items: center;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.jo_portfolio__navbar-item {
   list-style: none;
-  width: 500px;
-}
-.menu li a {
-  text-decoration: none;
-  color: #01336f;
+  text-transform: none;
+  color: #fcf6f3;
+  font-size: 20px;
+  text-transform: uppercase;
   font-weight: 700;
+}
+
+.jo_portfolio__main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=styles.css.map */

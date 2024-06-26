@@ -4,125 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+
+    <!--- Font Google  --->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
       rel="stylesheet"
     />
-    <title>Jihad Oujadi - Développeur Front-end</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--- Fin fonts --->
+    <title>JO - Votre site web sur mesure</title>
   </head>
   <body>
-    <main>
-      <!-- Début header -->
-      <header>
-        <nav>
-          <ul class="menu">
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="#competences">Compétences</a>
-            </li>
-            <li>
-              <a href="#projets">Projets</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="accroche">
-          <h1>
-            Jihad OUJADI <br />
-            Développeur Front-End
-          </h1>
-          <button
-            href="#"
-            role="button"
-            aria-label="Cliquez pour en savoir plus"
-            class="CTA"
-            >Me découvrir</button
-          >
-        </section>
-      </header>
-      <!-- Fin header-->
-
-      <!--Début section Présentation compétences -->
-      <main>
-        <section class="presentation" id="competences">
-          <div class="presentation--title">
-            <h2>Mes compétences</h2>
-            <p></p>
-          </div>
-          <div class="presentation--competences">
-            <figure class="presentation--competences_html">
-              <div class="image-competences">
-                <img src="./assets/html-5.png" alt="HTML5" />
-                <img src="./assets/css-3.png" alt="CSS" />
-                <img src="./assets/sass-logo.png" alt="SASS" />
-              </div>
-              <div class="competences-texte">
-                <h3>HTML / CSS / SASS</h3>
-                <p></p>
-              </div>
-            </figure>
-            <figure class="presentation--competences_js">
-              <img src="./assets/js.png" alt="JavaScript" />
-              <div class="competences-texte">
-                <h3>JavaScript</h3>
-                <p></p>
-              </div>
-            </figure>
-            <figure class="presentation--competences_php">
-              <img src="./assets/php.png" alt="PHP" />
-              <div class="competences-texte">
-                <h3>PHP</h3>
-                <p></p>
-              </div>
-            </figure>
-            <figure class="presentation--competences_wp">
-              <img src="./assets/wordpress.png" alt="Wordpress" />
-              <div class="competences-texte">
-                <h3>CMS</h3>
-                <p></p>
-              </div>
-            </figure>
-          </div>
-        </section>
-        <!-- Fin section Compétences -->
-
-        <!-- Début section portfolio -->
-
-        <section class="projets" id="projets">
-          <div class="container"></div>
-        </section>
-
-        <!-- Fin section Portfolio -->
-      </main>
-      <footer>
-        © Copyright -
-        <div id="annee">
-          <script>
-            var date = new Date();
-            var year = date.getFullYear();
-            document.write(year);
-          </script>
-        </div>
-
-      </footer>
+    <header class="jo_portfolio__main-navbar">
+      <nav class="jo_portfolio__navbar-container">
+        <ul class="jo_portfolio__navbar-list">
+          <li class="jo_portfolio__navbar-item">A propos</li>
+          <li class="jo_portfolio__navbar-item">Realisations</li>
+          <li class="jo_portfolio__navbar-item">Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="jo_portfolio__main-container">
+      <section class="jo_portfolio__banner"></section>
+      <section class="jo_portfolio__about"></section>
+      <section class="jo_portfolio__skills"></section>
+      <section class="jo_portfolio__projects"></section>
+      <section class="jo_portfolio--contact"></section>
     </main>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="/script.js"></script>
-  <script
-    src="https://kit.fontawesome.com/5321ed25d5.js"
-    crossorigin="anonymous"
-  ></script>
 </html>
